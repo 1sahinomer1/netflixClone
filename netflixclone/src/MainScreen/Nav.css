@@ -1,0 +1,96 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  height: 80px;
+  display: flex;
+
+  justify-content: space-between;
+  /*Animations*/
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.navBlack {
+  background-color: black;
+}
+.navLogo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
+}
+.navAvatar {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+  width: 30px;
+  object-fit: contain;
+}
+.leftList li {
+  list-style-type: none;
+  text-decoration: none;
+  float: left;
+  display: inline-block;
+  position: relative;
+  left: 150px;
+  top: 25px;
+}
+.leftList li a {
+  color: white;
+  text-align: center;
+  padding: 1.5em 0.5em;
+  margin-left: 1em;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.rightList li {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  float: left;
+}
+.rightList li a {
+  color: white;
+  text-align: center;
+  padding: 1.5em 0.5em;
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.icon {
+  position: relative;
+  top: 15px;
+  right: 40px;
+  margin-right: 10px;
+}
+.selectedName {
+  position: relative;
+  top: 20px;
+  right: 30px;
+}
+.searchBox {
+  position: relative;
+  top: 20px;
+  right: 30px;
+}
+.searchText {
+  position: relative;
+  top: -5px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition: 1s;
+  line-height: 30px;
+  width: 0px;
+}
+
+.searchBox:hover > .searchText {
+  width: 240px;
+  padding: 0 6px;
+}

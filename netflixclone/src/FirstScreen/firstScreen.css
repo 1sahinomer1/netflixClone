@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+.App {
+  height: 100vh;
+}
+.navLogo {
+  margin-left: 45px;
+  margin-top: 20px;
+  width: 90px;
+  object-fit: contain;
+}
+#whoWatch {
+  color: white;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: 170px;
+  left: 480px;
+  -webkit-user-select: none;
+}
