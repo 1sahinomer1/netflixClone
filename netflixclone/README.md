@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ <a href="https://netflix-clone-snowy-seven.vercel.app">LIVE</a>
 
 ## Available Scripts
 
