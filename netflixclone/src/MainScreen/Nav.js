@@ -3,7 +3,7 @@ import "./Nav.css";
 import { AiOutlineGift } from "react-icons/ai";
 import { IoIosNotifications } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
-function Nav({ selectedFoto, selectedName }) {
+function Nav({ selectedFoto, selectedName, search, setSearch }) {
   const [show, handleShow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -50,7 +50,8 @@ function Nav({ selectedFoto, selectedName }) {
             className="searchText"
             type="text"
             placeholder="İçerik,kişi,tür"
-            onChange={(e) => console.log(e.target.value)}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
           />
           <a className="searchButton">
             <AiOutlineSearch size={20} />

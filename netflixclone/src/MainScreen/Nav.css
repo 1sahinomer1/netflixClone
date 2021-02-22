@@ -17,7 +17,7 @@
 .navLogo {
   position: fixed;
   left: 20px;
-  width: 80px;
+  width: 90px;
   object-fit: contain;
 }
 .navAvatar {
@@ -46,6 +46,9 @@
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
+.leftList li a:hover {
+  color: rgb(197, 194, 191);
+}
 .rightList li {
   color: white;
   list-style-type: none;
@@ -64,6 +67,7 @@
 }
 .icon {
   position: relative;
+  cursor: pointer;
   top: 15px;
   right: 40px;
   margin-right: 10px;

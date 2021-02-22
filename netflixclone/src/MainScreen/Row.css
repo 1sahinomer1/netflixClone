@@ -1,5 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-
+body {
+  background-color: #141414;
+}
+.search {
+  position: relative;
+  top: 100px;
+}
 .row {
   color: white;
   margin-left: 20px;
@@ -25,6 +30,7 @@
   max-height: 150px;
   margin-right: 10px;
   transition: transform 450ms;
+  border-radius: 5px;
 }
 .rowPoster:hover {
   transform: scale(1.08);

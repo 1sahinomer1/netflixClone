@@ -7,7 +7,7 @@ function App() {
   const [userList, setUserList] = useState([
     {
       id: 1,
-      name: "ömer",
+      name: "Ömer",
       foto: "/img/user1foto.png",
     },
     {
