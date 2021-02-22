@@ -24,6 +24,8 @@ function SearchRow({ search, setSearch }) {
             .filter((movie) => movie.backdrop_path)
             .map((movie) => (
               <img
+                loading="lazy"
+                height="150px"
                 key={movie.id}
                 className={"rowPoster"}
                 src={`${IMG_API}${movie.backdrop_path}`}

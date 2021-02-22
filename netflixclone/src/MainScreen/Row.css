@@ -26,8 +26,7 @@ body {
 }
 .rowPoster {
   object-fit: contain;
-  width: 100%;
-  max-height: 150px;
+
   margin-right: 10px;
   transition: transform 450ms;
   border-radius: 5px;

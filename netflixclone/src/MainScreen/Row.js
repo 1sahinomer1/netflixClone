@@ -20,6 +20,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
       <div className="rowPosters">
         {movies.map((movie) => (
           <img
+            loading="lazy"
+            height="150px"
             key={movie.id}
             className={`rowPoster ${isLargeRow && "rowPosterLarge"}`}
             src={`${base_url}${
