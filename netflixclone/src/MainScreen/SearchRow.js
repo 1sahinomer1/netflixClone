@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Row from "./Row";
+
 import "./Row.css";
+
 function SearchRow({ search, setSearch }) {
   const IMG_API = "https://image.tmdb.org/t/p/w1280";
   const SEARCH_API =

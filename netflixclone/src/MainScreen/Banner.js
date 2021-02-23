@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import axios from "../API/axios";
-import requests from "../API/requests";
 import { BsFillPlayFill } from "react-icons/bs";
 import { HiOutlineInformationCircle } from "react-icons/hi";
+
+import axios from "../API/axios";
+import requests from "../API/requests";
+
 import "./Banner.css";
 function Banner() {
   const [movie, setMovie] = useState([]);

@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import UserList from "../User/UserList";
-import "./firstScreen.css";
 
-function FirstScreen({
-  changeScreen,
-  userList,
-  setSelectedFoto,
-  setSelectedName,
-}) {
+import Users from "../User/Users";
+
+import "./UserScreen.css";
+
+function UserScreen({ setScreen, users, setSelectedFoto, setSelectedName }) {
   return (
     <div className="App">
       <img
@@ -16,14 +13,14 @@ function FirstScreen({
         alt="Netflix Logo"
       />
       <span id="whoWatch">Kim izliyor?</span>
-      <UserList
-        changeScreen={changeScreen}
-        userList={userList}
+      <Users
+        setScreen={setScreen}
+        users={users}
         setSelectedFoto={setSelectedFoto}
         setSelectedName={setSelectedName}
-      ></UserList>
+      ></Users>
     </div>
   );
 }
 
-export default FirstScreen;
+export default UserScreen;

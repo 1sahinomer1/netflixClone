@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+
 import requests from "../API/requests";
 import Row from "./Row";
 import Banner from "./Banner";
 import Nav from "./Nav";
 import SearchRow from "./SearchRow";
+
 import "./MainScreen.css";
 function MainScreen({ selectedFoto, selectedName }) {
   const [search, setSearch] = useState("");

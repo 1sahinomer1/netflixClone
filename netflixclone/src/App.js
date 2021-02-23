@@ -1,10 +1,13 @@
-import "./App.css";
 import { useState } from "react";
-import FirstScreen from "./FirstScreen/FirstScreen";
+
+import UserScreen from "./UserScreen/UserScreen";
 import MainScreen from "./MainScreen/MainScreen";
+
+import "./App.css";
+
 function App() {
-  const [screen, changeScreen] = useState(false);
-  const [userList, setUserList] = useState([
+  const [screen, setScreen] = useState(false);
+  const [users, setUsers] = useState([
     {
       id: 1,
       name: "Ömer",
@@ -27,11 +30,11 @@ function App() {
   return (
     <div>
       {screen === false ? (
-        <FirstScreen
+        <UserScreen
           setSelectedFoto={setSelectedFoto}
           setSelectedName={setSelectedName}
-          changeScreen={changeScreen}
-          userList={userList}
+          setScreen={setScreen}
+          users={users}
         />
       ) : (
         <MainScreen selectedFoto={selectedFoto} selectedName={selectedName} />

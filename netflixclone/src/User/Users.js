@@ -1,16 +1,13 @@
 import React, { useState } from "react";
+
 import User from "./User";
+
 import "./User.css";
 
-function UserList({
-  changeScreen,
-  userList,
-  setSelectedFoto,
-  setSelectedName,
-}) {
+function Users({ setScreen, users, setSelectedFoto, setSelectedName }) {
   return (
     <div className="userList">
-      {userList.map((user) => {
+      {users.map((user) => {
         return (
           <User
             key={user.id}
@@ -19,7 +16,7 @@ function UserList({
             onClick={() => {
               setSelectedFoto(user.foto);
               setSelectedName(user.name);
-              changeScreen(true);
+              setScreen(true);
             }}
           ></User>
         );
@@ -28,4 +25,4 @@ function UserList({
   );
 }
 
-export default UserList;
+export default Users;
